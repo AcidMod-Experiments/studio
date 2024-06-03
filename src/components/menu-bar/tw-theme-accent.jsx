@@ -7,7 +7,7 @@ import {connect} from 'react-redux';
 import check from './check.svg';
 import dropdownCaret from './dropdown-caret.svg';
 import {MenuItem, Submenu} from '../menu/menu.jsx';
-import {ACCENT_BLUE, ACCENT_MAP, ACCENT_PURPLE, ACCENT_RED, ACCENT_TURBO, ACCENT_REDUX, ACCENT_LIME, Theme} from '../../lib/themes/index.js';
+import {ACCENT_BLUE, ACCENT_MAP, ACCENT_PURPLE, ACCENT_RED, ACCENT_TURBO, ACCENT_REDUX, ACCENT_LIME, ACCENT_RAINBOW, Theme} from '../../lib/themes/index.js';
 import {openAccentMenu, accentMenuOpen, closeSettingsMenu} from '../../reducers/menus.js';
 import {setTheme} from '../../reducers/theme.js';
 import {persistTheme} from '../../lib/themes/themePersistance.js';
@@ -43,6 +43,11 @@ const options = defineMessages({
         defaultMessage: 'Lime',
         description: 'Name of the Lime color scheme. She comes in colours everywhere.',
         id: 'tw.accent.lime'
+    },
+    [ACCENT_RAINBOW]: {
+        defaultMessage: 'Pride',
+        description: 'Name of the Pride color scheme. Rainbow!',
+        id: 'tw.accent.rainbow'
     }
 });
 
